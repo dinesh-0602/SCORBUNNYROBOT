@@ -74,19 +74,19 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`𝙷𝙴𝚈,𝙷𝙸𝙸 𝙸 𝙰𝙼 𝙴𝙼𝙲𝙴𝙴`
-`𝙸'𝙰𝙼 𝙰𝙽 𝙰𝙽𝙸𝙼𝙴 𝚃𝙷𝙴𝙼𝙴𝙳 𝙶𝚁𝙾𝚄𝙿 𝙼𝙰𝙽𝙰𝙶𝙸𝙽𝙶 𝙱𝙾𝚃! 𝙲𝙻𝙸𝙲𝙺` *📚𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂* `𝙱𝚄𝚃𝚃𝙾𝙽 𝙱𝙴𝙻𝙾𝚆 𝚃𝙾 𝙴𝚇𝙿𝙻𝙾𝚁𝙴 𝙼𝙾𝚁𝙴 𝙰𝙱𝙾𝚄𝚃 𝙼𝙴 𝙰𝙽𝙳 𝙼𝚈 𝙵𝚄𝙽𝙲𝚃𝙸𝙾𝙽𝚂.
-**Powered By** @DaisyXNews` [.](https://telegra.ph/file/14870c995b7b3bf2cd6e3.jpg) 
+`𝙷𝙴𝚈,𝙷𝙸𝙸 𝙸 𝙰𝙼 SCORBUNNY`
+`𝙸'𝙰M 𝙰 CUTE 𝙰𝙽𝙸𝙼𝙴 𝚃𝙷𝙴𝙼𝙴𝙳 𝙶𝚁𝙾𝚄𝙿 𝙼𝙰𝙽𝙰𝙶𝙸𝙽𝙶 𝙱𝙾𝚃! 𝙲𝙻𝙸𝙲𝙺` *📚𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂* `𝙱𝚄𝚃𝚃𝙾𝙽 𝙱𝙴𝙻𝙾𝚆 𝚃𝙾 𝙴𝚇𝙿𝙻𝙾𝚁𝙴 𝙼𝙾𝚁𝙴 𝙰𝙱𝙾𝚄𝚃 𝙼𝙴 𝙰𝙽𝙳 𝙼𝚈 𝙵𝚄𝙽𝙲𝚃𝙸𝙾𝙽𝚂.
+**Powered By** @Aryanjawale` [.](https://telegra.ph/file/3bdcbfee1f7b88baa155f.jpg) 
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="༆ ADD EMCEE TO YOUR GROUP ༆", url="t.me/Emcee_Bot?startgroup=true"),
+            text="༆ ADD SCORBUNNY TO YOUR GROUP ༆", url="t.me/Scorbunnyrobot?startgroup=true"),
     ],
     [  
-        InlineKeyboardButton(text="❄️EMCEE WEB❄️", url="https://emcee.art.blog/"),
-        InlineKeyboardButton(text="✨EMCEE DEVS✨", url="https://t.me/Emcee_Devs"),
+        InlineKeyboardButton(text="🔥 SCORBUNNY WEB🔥", url="https://emcee.art.blog/"),
+     
     ], 
     [
         InlineKeyboardButton(text="ℹ️ABOUT", callback_data="masha_"),
@@ -95,12 +95,12 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="✨UPDATES✨", url="t.me/Emcee_Updates"),
+            text="✨UPDATES✨", url="https://t.me/trainer_zone"),
         InlineKeyboardButton(
-            text="👥SUPPORT👥", url="https://t.me/Emcee_Support"),
+            text="👥SUPPORT👥", url="https://t.me/trainer_zone"),
     ],
     [  
-        InlineKeyboardButton(text="⚓ARCANE UNIVERSE⚓", url="https://t.me/Arcane_Universe"
+        InlineKeyboardButton(text="👑OWNER👑", url="https://t.me/Aryanjawale"
     ),
     ], 
     
@@ -109,13 +109,13 @@ buttons = [
 
 
 HELP_STRINGS = """
-༆*EMCEE comes with many special features in it*༆
-꧁*CHECK ALL BUTTON BELOW TO EXPLORE EVERY COMMANDS OF EMCEE*꧂
+༆*SCORBUNNY comes with many special features in it*༆
+꧁*CHECK ALL BUTTON BELOW TO EXPLORE EVERY COMMANDS OF SCORBUNNY*꧂
 𖣘 *All commands can either be used with* `/` *or* `!`.
 𖣘 *If you facing any issue or find any bugs in any command then you can report it in @Emcee_Support* [.](https://telegra.ph/file/073b380cf13052e500490.jpg)
 """
 
-EMCEE_IMG = "https://telegra.ph/file/6b7c2fed4dc8e80ff83db.mp4"
+EMCEE_IMG = "https://telegra.ph/file/bf292ad4927c6c3a3d928.jpg"
 
 DONATE_STRING = """No need.. I'm rich"""
 
@@ -362,7 +362,7 @@ def Masha_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "masha_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *EMCEE*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *Scorbunny*, a powerful group management bot built to help you manage your group easily.
                  ❍ I can restrict users.
                  ❍ I can greet users with customizable welcome messages and even set a group's rules.
                  ❍ I have an advanced anti-flood system.
@@ -370,8 +370,8 @@ def Masha_about_callback(update: Update, context: CallbackContext):
                  ❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  ❍ I check for admins' permissions before executing any command and more stuffs
                  \n_Emcee's licensed under the GNU General Public License v3.0_
-                 Here is the [💾Repository](https://t.me/Emcee_Support).
-                 If you have any question about Emcee, let us know at @Emceesupport.""",
+                 Here is the [💾Repository](https://github.com/Aryanjawale/SCORBUNNYROBOT).
+                 If you have any question about SCORBUNNY, let us know at @trainer_zone.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -397,8 +397,8 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Emcee*
-                 \nHere is the [Source Code](https://t.me/Emcee_Support) .""",
+            text=""" Hi..🤗 I'm *Scorbunn*
+                 \nHere is the [Source Code](https://t.me/trainer_zone) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
