@@ -194,6 +194,6 @@
          "required": false,
          "value": ""
       }
-      
-   }
+    },
+  "stack": "container"
 }
